@@ -1,11 +1,8 @@
 from node:6.1
 
-add package.json sct-snapshot-rest-api/package.json
-
+add . /sct-snapshot-rest-api
 workdir sct-snapshot-rest-api
 run npm install
-
-add . sct-snapshot-rest-api
 
 expose 3000
 

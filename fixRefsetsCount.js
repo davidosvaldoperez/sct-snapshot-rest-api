@@ -10,7 +10,7 @@ var performMongoDbRequest = function(databaseName, callback) {
         callback(databases[databaseName]);
     } else {
         //console.log("Connecting");
-        MongoClient.connect("mongodb://localhost:27017/"+databaseName, function(err, db) {
+        MongoClient.connect("mongodb://mongo:27017/"+databaseName, function(err, db) {
             if (err) {
                 console.warn(getTime() + " - " + err.message);
                 res.status(500);
